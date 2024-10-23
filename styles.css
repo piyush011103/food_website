@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    width: 93rem;
+    background-color: #faefdb;
+    background-size: 100%;
+}
+.logo img{
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.link{
+    display: flex;
+    gap: 6rem;
+}
+ nav div a{
+    text-decoration: none;
+    color: black;
+    padding: .33rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+ }
+ nav div a:hover{
+    transform: scale(1.15);
+    padding: .33rem;
+    background-color: black;
+    color: #ffeac4;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
+ .search-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: black;
+    border-radius: 30px;
+    position: relative;
+    right:1.4rem;
+ }
+ .search-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
+ .container-1{
+     display: flex;
+     background-image: url(./pictures/elegant-background.jpg);
+     background-size: contain;
+     background-position: center;
+     height: 80vh;
+     width: 94.6rem;
+ }
+ .desc{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .booknow-btn{
+     background-color: transparent;
+     width: 150px;
+     cursor: pointer;
+     color: black;
+     background-color: #ffeac4;
+     transition: all 0.5s ease;
+     margin-top: 20px;
+     margin-left: 150px;
+     font-size: 20px;
+     padding: 8px;
+     border-radius: 30px;
+ }
+ .booknow-btn:hover{
+    transform: scale(1.1);
+    padding: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: #ffeac4;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
+ .heading{
+    color: black;
+    background-color: #ffeac4;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-left: 140px;
+    font-size: 70px;
+ }
+ .image{
+    position: relative;
+    left: 280px;
+    top: 40px;
+ }
+ .flip-card {
+    background-color: transparent;
+    width: 600px;
+    margin-left: 150px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    perspective: 1000px;
+ }
+
+ .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+ }
+
+ .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+ }
+
+ .flip-card-front,.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+ }
+
+ .flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ffeac4;
+    color: black;
+    font-size: 30px;
+ }
+
+ .flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ffeac4;
+    color: black;
+    font-size: 20px;
+    transform: rotateY(-180deg);
+ }
+ .container-2{
+    width: 94.6rem;
+    height: 91vh;
+    background-image: url(./pictures/Mandala-Art-Wallpaper-44477.jpg);
+    background-size: contain;
+    display: flex;
+ }
+ .food-description{
+     display: flex;
+     flex-direction: column;
+     height: 400px;
+     width: 1200px;
+     position: relative;
+     top: 125px;
+     border-top-left-radius: 250px;
+     border-bottom-left-radius: 250px;
+     background-image: url(./pictures/elegant-background.jpg);
+     background-size: contain;
+     z-index: 0;
+ }
+ .about-food-head1{
+    margin-top: 20px;
+    margin-left: 400px;
+    font-size: 45px;
+ }
+ .about-food-head2{
+    margin-top: 20px;
+    margin-left: 400px;
+    font-size: 25px;
+ }
+ .food-desc-para{
+    margin-top: 20px;
+    width: 400px;
+    margin-left: 400px;
+    font-size: 20px;
+ }
+ .readmore-btn{
+    margin-top: 30px;
+    width: 150px;
+    margin-left: 400px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #ffeac4;
+    color: black;
+    transition: all 0.5s ease;
+ }
+ .readmore-btn:hover{
+    transform: scale(1.1);
+    padding: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: #ffeac4;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
+ .container-2-about-food-image{
+    margin-top: 135px;
+    position: relative;
+    left: 380px;
+    bottom: 15px;
+    z-index: 1;
+ }
+ .container-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 94.6rem;
+    height: 50vh;
+    background-image: url(./pictures/elegant-background.jpg);
+    background-size: contain;
+ }
+ .container-3-para{
+    width: 200px;
+    margin-top: 10px;
+    font-size: 20px;
+ }
+ .container-3-head{
+    margin-top: 35px;
+ }
+ .delivery-img{
+     margin-left: 45px;
+ }
+ .chef-img{
+     margin-left: 70px;
+ }
+ .taste-img{
+     margin-left: 50px;
+ }
+ #container-3-para{
+    margin-left: 7px;
+    width: 250px;
+ }
+ .container-4{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 94.6rem;
+    background-color: black;
+ }
+ .chef-desc{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .chef-desc div img{
+    background-color: #ffeac4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+ .chef-desc div p{
+    text-align: center;
+    font-size: 17px;
+     width: 200px;
+     height: 30px;
+     background-color: white;
+     position: relative;
+     bottom: 7px;
+ }
+ .chef-bottom-line{
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+ }
+ .chef-detail{
+    transition: all 0.5s ease;
+    position: relative;
+    top: 100px;
+    border-radius: 20px;
+    height: 357px;
+    box-shadow: 0px 0px 10px #ffeac4;
+    cursor: pointer;
+ }
+ .chef-detail:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px #ffeac4;
+ }
+ .chef-heading{
+     text-align: center;
+     position: relative;
+     top: 40px;
+     color: #ffeac4;
+ }
+ .chef-detail-para{
+     position: relative;
+     color: #ffeac4;
+     top: 180px;
+     left: 160px;
+     width: 1200px;
+     font-size: 20px;
+     text-align: center;
+ }
+ .container-5{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 94.6rem;
+    height: 80vh;
+    background-image: url(./pictures/elegant-background.jpg);
+ }
+ .container-5-img img{
+    border-radius: 40px;
+ }
+ .container-5-head{
+    width: 450px;
+    position: relative;
+    bottom: 65px;
+    font-size: 35px;
+ }
+ .container-5-para{
+    width: 400px;
+    position: relative;
+    bottom: 25px;
+    font-size: 18px;
+ }
+ .container-5-btn{
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    padding: 8px;
+    width: 150px;
+    background-color: #ffeac4;
+    color: black;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+ }
+ .container-5-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
+ .container-6{
+    height: 50vh;
+    width: 94.6rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+ }
+ .container-6 h1{
+    text-align: center;
+    font-size: 65px;
+    position: relative;
+    top: 30px;
+    color: #ffeac4;
+ }
+ .testimonial{
+    width: 800px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: 350px;
+    top: 60px;
+    color: #ffeac4;
+ }
+ .container-6-para{
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+    text-align: center;
+ }
+ .circle{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    position: relative;
+    left: 655px;
+    top: 140px;
+ }
+ .circle div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffeac4;
+ }
+ .main-circle{
+    box-shadow: 0px 0px 20px #ffffff;
+ }
+ .container-7{
+    width: 94.6rem;
+    height: 30vh;
+    background-image: url(./pictures/elegant-background.jpg);
+    background-size: contain;
+    text-align: center;
+ }
+ .container-7 h1{
+    position: relative;
+    top: 10px;
+    color: black;
+    font-size: 60px
+ }
+ .container-7 h2{
+    position: relative;
+    color: black;
+    top: 30px;
+ }
+ .container-7 p{
+    width: 1200px;
+    position: relative;
+    color: black;
+    left: 155px;
+    top: 60px;
+ }
+ .container-8{
+    display:flex;
+    flex-wrap: wrap;
+    width: 94.6rem;
+    height: 100vh;
+    background-color: black;
+    color: #ffeac4;
+ }
+ .container-8-inner{
+    flex: 0 0 50%;
+    display: flex;
+ }
+ .dish-para{
+    width: 280px;
+ }
+ .dish1{
+    position: relative;
+    top: 70px;
+    left: 80px;
+ }
+ .dish2{
+    position: relative;
+    top: 70px;
+    left: 80px;
+ }
+ .dish3{
+    position: relative;
+    top: 50px;
+    left: 220px;
+ }
+ .dish4{
+    position: relative;
+    top: 50px;
+    right: 50px;
+ }
+ .dish5{
+    position: relative;
+    top: 50px;
+    left: 185px;
+ }
+ .dish6{
+    position: relative;
+    top: 50px;
+    left: 80px;
+ }
+ .img1{
+    position: relative;
+    top: 15px;
+    left: 80px;
+ }
+ .img2{
+    position: relative;
+    left: 60px
+ }
+ .img3{
+    position: relative;
+    left: 165px
+ }
+ .img4{
+    position: relative;
+    bottom: 15px;
+    right: 8px;
+ }
+ .img5{
+    position: relative;
+    left: 150px
+ }
+ .img6{
+    position: relative;
+    left: 60px;
+    bottom: 25px;
+ }
+ .dish1 h1, .dish2 h1, .dish3 h1, .dish4 h1, .dish5 h1, .dish6 h1{
+    position: relative;
+    bottom: 10px;
+    font-size: 35px;
+    color: #ffeac4;
+ }
+ .container-9{
+    text-align: center;
+    width: 94.6rem;
+    height: 70vh;
+    background-image: url(./pictures/elegant-background.jpg);
+ }
+ .container-9 h1{
+    color: black;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    font-size: 80px;
+    width: 500px;
+ }
+ .container-9 p{
+    color: black;
+    position: relative;
+    top: 80px;
+    width: 850px;
+    left: 330px;
+    font-size: 20px;
+ }
+ .container-9 input{
+    border: 4px solid black;
+    background-color: #ffeac4;
+    position: relative;
+    top: 110px;
+    height: 30px;
+    width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+ }
+ .container-9 input::placeholder{
+    font-size: 20px;
+ }
+ .container-9 button{
+    position: relative;
+    top: 140px;
+    height: 40px;
+    width: 510px;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+ }
+ .container-9 button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
+ .container-10{
+    background-color: black;
+    width: 94.6rem;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+   .fa {
+       padding: 5px;
+       font-size: 30px;
+       width: 30px;
+       text-decoration: none;
+    background-color: #ffeac4;
+    color: black;
+       margin: 5px 8px;
+    border-radius: 30px;
+    position: relative;
+    top: 40px;
+    right: 90px;
+    transition: all 0.5s ease;
+   }
+ .fa:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+ }
+ .container-10-inner1 h1{
+    font-size: 40px;
+    color: #ffeac4;
+ }
+ .container-10-inner2 h1{
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+    color: #ffeac4;
+ }
+ .container-10-inner3 h1{
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+    color: #ffeac4;
+ }
+ .container-10-inner4 h1{
+    font-size: 40px;
+    position: relative;
+    bottom: 30px;
+    color: #ffeac4;
+ }
+ .container-10-inner1 p{
+    width: 400px;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    color: #ffeac4;
+    transition: all 0.5s ease;
+ }
+ .container-10-inner2 a{
+    text-decoration: none;
+    color: #ffeac4;
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+    transition: all 0.5s ease;
+ }
+ .container-10-inner3 a{
+    text-decoration: none;
+    color: #ffeac4;
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+    transition: all 0.5s ease;
+ }
+ .container-10-inner4 a{
+    text-decoration: none;
+    color: #ffeac4;
+    font-size: 20px;
+    transition: all 0.5s ease;
+ }
+ .container-10-inner1 a:hover, .container-10-inner2 a:hover, .container-10-inner3 a:hover, .container-10-inner4 a:hover{
+    background-color: #ffeac4;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
